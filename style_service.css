@@ -1,0 +1,208 @@
+* {
+  font-family: "roboto condensed", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+#alexandre .services {
+   display: flex;
+   justify-content: center;
+   margin-top: 30px;
+}
+
+#alexandre .all {
+  width: 40%
+}
+
+@media screen and (max-width: 360px) {
+  
+  #alexandre .allTitles {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+  }
+  #alexandre .titleO {
+    width: max-content;
+    color: white;
+    font-size: 6px;
+    font-weight: bold;
+    padding: 10px 10px 20px 10px;
+    background-color: #ddd1a7;
+    border-radius: 30% 30% 0% 0%;
+  }
+
+  #alexandre .titleE {
+    width: max-content;
+    color: white;
+    font-size: 6px;
+    font-weight: bold;
+    padding: 10px 10px 5px 10px;
+    background-color: #ddd1a7;
+    border-radius: 30% 30% 0% 0%;
+  }
+
+  #alexandre .titleB {
+    width: max-content;
+    color: white;
+    font-size: 6px;
+    font-weight: bold;
+    padding: 10px 10px 5px 10px;
+    background-color: #ddd1a7;
+    border-radius: 30% 30% 0% 0%;
+  }
+
+  #alexandre .titleR {
+    width: max-content;
+    color: white;
+    font-size: 6px;
+    font-weight: bold;
+    padding: 10px 10px 5px 10px;
+    background-color: #ddd1a7;
+    border-radius: 30% 30% 0% 0%;
+  }
+
+  #alexandre .subTitle {
+    font-size: 10px;
+    font-weight: bold;
+    color: #266654;
+    margin-bottom: 5px;
+  }
+
+  #alexandre .txt {
+    font-size: 10px;
+    margin-bottom: 10px;
+    width: 100%;
+  }
+
+  #alexandre .italic {
+    font-size: 10px;
+    font-style: italic;
+  
+  }
+
+  #alexandre .contenairTxt {
+    display: flex;
+    flex-direction: column-reverse;
+    background-color: #ddd1a7;
+    padding: 5px;
+    width: 100%;
+  }
+
+  #alexandre img {
+    width: 100%;
+    height: 150px;
+  }
+}
+
+@media screen and (min-width: 361px) {
+
+  #alexandre .subTitleTrait {
+        display:flex;
+        align-items: center;
+        justify-content: space-between;
+        
+    }
+
+    #alexandre .trait {
+        height: 2px;
+        width: 35%;
+        background-color: #ECB568;
+        position: relative;
+        top: 2px;
+        margin-left: 3px;
+    }
+
+    #alexandre .allTitles {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+  }
+
+  #alexandre .titleO {
+    width: max-content;
+    color: white;
+    font-size: 6px;
+    font-weight: bold;
+    padding: 10px 10px 20px 10px;
+    background-color: #ddd1a7;
+    border-radius: 15px 15px 0px 0px;
+  }
+  #alexandre .titleE {
+    width: max-content;
+    color: white;
+    font-size: 6px;
+    font-weight: bold;
+    padding: 10px 10px 5px 10px;
+    background-color: #ddd1a7;
+    border-radius: 15px 15px 0px 0px;
+  }
+  #alexandre .titleB {
+    width: max-content;
+    color: white;
+    font-size: 6px;
+    font-weight: bold;
+    padding: 10px 10px 5px 10px;
+    background-color: #ddd1a7;
+    border-radius: 15px 15px 0px 0px;
+  }
+
+  #alexandre h2{
+    font-size: 10px;
+  } 
+
+
+  #alexandre .titleR {
+    width: max-content;
+    color: white;
+    font-size: 6px;
+    font-weight: bold;
+    padding: 10px 10px 5px 10px;
+    background-color: #ddd1a7;
+    border-radius: 15px 15px 0px 0px;
+  }
+
+  #alexandre .subTitle {
+    font-size: 17px;
+    font-weight: bold;
+    color: #266654;
+    margin-bottom: 5px;
+  }
+
+  #alexandre .txt {
+    font-size: 10px;
+    margin-bottom: 10px;
+    width: 100%;
+  }
+
+  #alexandre .italic {
+    font-size: 10px;
+    font-style: italic;
+    padding-top: 15px;
+  }
+
+  #alexandre .contenairTxt {
+    display: flex;
+    background-color: #ddd1a7;
+    padding: 5px;
+    padding-right: 10px;
+    width: fit-content;
+    border-radius: 0 15px 15px 15px;
+  }
+
+  #alexandre .contenairImg {
+    margin-right: 10px;
+    width: 60%
+}
+
+#alexandre img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+  }
+
+  #alexandre .layout {
+    width: 40%;
+    
+  }
+  
+}
