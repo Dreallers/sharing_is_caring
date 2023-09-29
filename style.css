@@ -1,0 +1,221 @@
+/* CSS RESERVATION ET FORMULAIRE ALEXANDRA */
+/* PARTIE MOBILE FIRST */
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto condensed", sans-serif;
+}
+
+.container-global {
+  display: flex;
+  flex-direction: column;
+  margin: 8% 5% 5%;
+}
+
+.container-resa {
+  margin-left: 20px;
+  margin-top: 10%;
+  display: flex;
+  align-items: flex-end;
+}
+
+.titre h1 {
+  justify-content: center;
+  color: #ecb568;
+  font-size: 25px;
+  font-weight: bold;
+  height: 9px;
+}
+
+.trait {
+  height: 2px;
+  width: 400px;
+  background-color: #ecb568;
+  align-items: center;
+}
+
+hr {
+  color: #ecb568;
+  width: 80px;
+}
+
+.container-forfait {
+  display: flex;
+  justify-content: center;
+  color: white;
+  gap: 15px;
+}
+
+div article {
+  margin-top: 8px;
+}
+
+.repas {
+  font-size: 10px;
+}
+
+.demi-journée {
+  text-align: center;
+  background-color: rgba(38, 102, 84, 0.7);
+  border-radius: 5px;
+  padding: 6px;
+  border: solid 1px rgba(19, 37, 56, 0.2);
+}
+
+.journée {
+  text-align: center;
+  background-color: rgba(38, 102, 84, 0.9);
+  border-radius: 5px;
+  padding: 6px;
+  border: solid 1px rgba(19, 37, 56, 0.2);
+}
+
+.semaine {
+  text-align: center;
+  background-color: rgba(38, 102, 84, 1);
+  border-radius: 5px;
+  padding: 6px;
+  border: solid 1px rgba(19, 37, 56, 0.2);
+}
+
+.formulaire {
+  background-color: #ddd1a7;
+  font-size: 16px;
+  margin-top: 10%;
+  border-radius: 10px;
+  padding: 15px;
+  border: solid 1px rgba(19, 37, 56, 0.2);
+}
+
+#titre {
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+#trait2 {
+  margin-left: 30%;
+  height: 3px;
+  background-color: black;
+  width: 40%;
+}
+
+.input-form {
+  margin-top: 5%;
+  display: flex;
+  justify-content: center;
+}
+
+input {
+  border-inline-style: unset;
+  border-top-style: unset;
+  border-radius: 5px;
+  height: 25px;
+  width: 266px;
+  margin-bottom: 2%;
+}
+
+textarea {
+  border-inline-style: unset;
+  border-top-style: unset;
+  border-radius: 5px;
+  width: 266px;
+  height: 106px;
+}
+
+button {
+  background-color: white;
+  border-inline-style: unset;
+  border-top-style: unset;
+  border-radius: 5px;
+  width: 93px;
+  height: 28px;
+  margin-left: 175px;
+  margin-top: 10px;
+  font-family: "Roboto condensed", sans-serif;
+}
+
+/* CSS RESERVATION ET FORMULAIRE ALEXANDRA */
+/* PARTIE DESKTOP */
+
+@media only screen and (min-width: 800px) {
+  .container-global {
+    align-items: center;
+    margin-top: 50px;
+  }
+
+  .container-resa {
+    justify-content: center;
+  }
+
+  .titre h1 {
+    font-size: 34px;
+  }
+
+  .trait {
+    height: 3px;
+  }
+
+  .container-forfait {
+    gap: 20px;
+  }
+
+  .demi-journée {
+    font-size: 25px;
+    flex-grow: 0;
+    width: 160px;
+    border: solid 2px rgba(19, 37, 56, 0.2);
+  }
+
+  .journée {
+    font-size: 25px;
+    flex-grow: 0;
+    width: 170px;
+    border: solid 2px rgba(19, 37, 56, 0.2);
+  }
+
+  .semaine {
+    font-size: 25px;
+    flex-grow: 0;
+    width: 170px;
+    border: solid 2px rgba(19, 37, 56, 0.2);
+  }
+
+  .repas {
+    font-size: 20px;
+  }
+
+  #titre {
+    font-size: 30px;
+  }
+
+  .formulaire {
+    flex-grow: 0;
+    margin-top: 5%;
+    width: 569px;
+    border: solid 2px rgba(19, 37, 56, 0.2);
+  }
+
+  label {
+    font-size: 20px;
+  }
+
+  button {
+    font-size: 20px;
+    margin-left: 80%;
+  }
+
+  .input-form {
+    display: flex;
+    justify-content: center;
+    margin-top: 5%;
+  }
+
+  textarea {
+    width: 489px;
+  }
+  input {
+    width: 489px;
+  }
+}
