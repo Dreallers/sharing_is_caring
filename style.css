@@ -4,20 +4,24 @@
   padding: 0;
 }
 
-.services {
+#alexandre .services {
    display: flex;
    justify-content: center;
    margin-top: 30px;
 }
 
+#alexandre .all {
+  width: 40%
+}
+
 @media screen and (max-width: 360px) {
   
-  .allTitles {
+  #alexandre .allTitles {
     display: flex;
     flex-direction: row;
     align-items: flex-end;
   }
-  .titleO {
+  #alexandre .titleO {
     width: max-content;
     color: white;
     font-size: 6px;
@@ -27,7 +31,7 @@
     border-radius: 30% 30% 0% 0%;
   }
 
-  .titleE {
+  #alexandre .titleE {
     width: max-content;
     color: white;
     font-size: 6px;
@@ -37,7 +41,7 @@
     border-radius: 30% 30% 0% 0%;
   }
 
-  .titleB {
+  #alexandre .titleB {
     width: max-content;
     color: white;
     font-size: 6px;
@@ -47,7 +51,7 @@
     border-radius: 30% 30% 0% 0%;
   }
 
-  .titleR {
+  #alexandre .titleR {
     width: max-content;
     color: white;
     font-size: 6px;
@@ -57,25 +61,26 @@
     border-radius: 30% 30% 0% 0%;
   }
 
-  .subTitle {
+  #alexandre .subTitle {
     font-size: 10px;
     font-weight: bold;
     color: #266654;
     margin-bottom: 5px;
   }
 
-  .txt {
+  #alexandre .txt {
     font-size: 10px;
     margin-bottom: 10px;
     width: 100%;
   }
 
-  .italic {
+  #alexandre .italic {
     font-size: 10px;
     font-style: italic;
+  
   }
 
-  .contenairTxt {
+  #alexandre .contenairTxt {
     display: flex;
     flex-direction: column-reverse;
     background-color: #ddd1a7;
@@ -83,7 +88,7 @@
     width: 100%;
   }
 
-  img {
+  #alexandre img {
     width: 100%;
     height: 150px;
   }
@@ -91,28 +96,29 @@
 
 @media screen and (min-width: 361px) {
 
-    .subTitleTrait {
+  #alexandre .subTitleTrait {
         display:flex;
         align-items: center;
+        justify-content: space-between;
         
     }
 
-    .trait {
+    #alexandre .trait {
         height: 2px;
-        width: 100%;
+        width: 35%;
         background-color: #ECB568;
         position: relative;
         top: 2px;
-        margin-left: 8px;
+        margin-left: 3px;
     }
 
-  .allTitles {
+    #alexandre .allTitles {
     display: flex;
     flex-direction: row;
     align-items: flex-end;
   }
 
-  .titleO {
+  #alexandre .titleO {
     width: max-content;
     color: white;
     font-size: 6px;
@@ -121,7 +127,7 @@
     background-color: #ddd1a7;
     border-radius: 15px 15px 0px 0px;
   }
-  .titleE {
+  #alexandre .titleE {
     width: max-content;
     color: white;
     font-size: 6px;
@@ -130,17 +136,7 @@
     background-color: #ddd1a7;
     border-radius: 15px 15px 0px 0px;
   }
-  .titleB {
-    width: max-content;
-    color: white;
-    font-size: 6px;
-    font-weight: bold;
-    padding: 10px 10px 5px 10px;
-    background-color: #ddd1a7;
-    border-radius: 15px 15px 0px 0px;
-  }
-
-  .titleR {
+  #alexandre .titleB {
     width: max-content;
     color: white;
     font-size: 6px;
@@ -150,25 +146,41 @@
     border-radius: 15px 15px 0px 0px;
   }
 
-  .subTitle {
+  #alexandre h2{
     font-size: 10px;
+  } 
+
+
+  #alexandre .titleR {
+    width: max-content;
+    color: white;
+    font-size: 6px;
+    font-weight: bold;
+    padding: 10px 10px 5px 10px;
+    background-color: #ddd1a7;
+    border-radius: 15px 15px 0px 0px;
+  }
+
+  #alexandre .subTitle {
+    font-size: 17px;
     font-weight: bold;
     color: #266654;
     margin-bottom: 5px;
   }
 
-  .txt {
+  #alexandre .txt {
     font-size: 10px;
     margin-bottom: 10px;
     width: 100%;
   }
 
-  .italic {
+  #alexandre .italic {
     font-size: 10px;
     font-style: italic;
+    padding-top: 15px;
   }
 
-  .contenairTxt {
+  #alexandre .contenairTxt {
     display: flex;
     background-color: #ddd1a7;
     padding: 5px;
@@ -177,18 +189,18 @@
     border-radius: 0 15px 15px 15px;
   }
 
-  .contenairImg {
+  #alexandre .contenairImg {
     margin-right: 10px;
     width: 60%
 }
 
-  img {
+#alexandre img {
     width: 100%;
-    height: 150px;
+    height: 100%;
     border-radius: 10px;
   }
 
-  .layout {
+  #alexandre .layout {
     width: 40%;
     
   }
