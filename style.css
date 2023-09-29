@@ -17,7 +17,7 @@ body {
   flex-direction: column;
 }
 
-.container-logo{
+#Vincent .container-logo{
   
  display: flex;
  justify-content: center;
@@ -26,7 +26,7 @@ body {
   width: 100%;
 }
 
-.logo {
+#Vincent .logo {
   z-index: 5;
   width: 70px;
   display: flex;
@@ -34,7 +34,7 @@ body {
 }
 
 
-header {
+#Vincent header {
   height: 70px;
   width: 100%;
   padding: 5px 15px;
@@ -43,12 +43,12 @@ header {
   left: 0;
 }
 
-.container-header {
+#Vincent .container-header {
   width: 100%;
  
 }
 
-.container-menu {
+#Vincent .container-menu {
   position: fixed;
   top: 0;
   left: 0;
@@ -66,19 +66,19 @@ header {
   backdrop-filter: blur(8px);
 }
 
-.menu a::first-letter {
+#Vincent .menu a::first-letter {
   color: #266658;
   font-size: 1.2em;
   font-weight: 600;
 }
 
-a {
+#Vincent a {
   color: #0c2428;
   text-decoration: none;
-  cursor: pointer;
+
 }
 
-.menu {
+#Vincent .menu {
   font-family: "Roboto Condensed", sans-serif;
   display: flex;
   justify-content: center;
@@ -89,11 +89,11 @@ a {
   font-size: 0.8em;
 }
 
-.mobile-menu {
+#Vincent .mobile-menu {
   transform: translateX(0);
 }
 
-.ham {
+#Vincent .ham {
   width: 100%;
   min-height: 100%;
   display: flex;
@@ -101,7 +101,7 @@ a {
   position: relative;
 }
 
-.menu-hamburger {
+#Vincent .menu-hamburger {
   width: 40px;
   cursor: pointer;
   position: absolute;
@@ -112,12 +112,12 @@ a {
   right: 0;
 }
 
-.container-global-fond {
+#Vincent .container-global-fond {
   width: 100%;
   flex: 1;
 }
 
-.container-fond {
+#Vincent .container-fond {
   z-index: -1;
   position: relative;
   margin-top: 70px;
@@ -129,7 +129,7 @@ a {
   
 }
 
-.container-footer {
+#Vincent .container-footer {
   flex: 1;
   width: 100%;
   color: #132538;
@@ -138,33 +138,33 @@ a {
   background-size: cover;
   background-position: 50% 50%;
 }
-.footer-element {
+#Vincent .footer-element {
   display: flex;
 }
 
-.reseau {
+#Vincent .reseau {
   width: 50%;
   height: 146px;
   display: flex;
   flex-direction: column;
 }
 
-.reseau img {
+#Vincent .reseau img {
   width: 30%;
   height: calc(110px / 3);
   object-fit: cover;
 }
 
-.reseau p {
+#Vincent .reseau p {
   padding: 5px;
   font-size: 9px;
   font-family: "Roboto Condensed", sans-serif;
 }
-.reseau img {
+#Vincent .reseau img {
   cursor: pointer;
 }
 
-.localistation-horraire {
+#Vincent .localistation-horraire {
   width: 30%;
   height: 146px;
   text-align: left;
@@ -177,7 +177,7 @@ a {
   font-family: "Roboto Condensed", sans-serif;
 }
 
-.img-horraire {
+#Vincent .img-horraire {
   height: 146px;
   width: 20%;
   display: flex;
@@ -185,42 +185,42 @@ a {
   align-items: end;
 }
 
-.img-horraire img {
+#Vincent .img-horraire img {
   width: 50px;
 }
 
-.localisation {
+#Vincent .localisation {
   display: inline;
 }
 
-.localisation h4 {
+#Vincent .localisation h4 {
   font-size: 10px;
 }
 
-.localisation p {
+#Vincent .localisation p {
   font-size: 7px;
 }
 
-.horraire h4 {
+#Vincent .horraire h4 {
   font-size: 8px;
 }
-.horraire h5 {
+#Vincent .horraire h5 {
   display: flex;
   justify-content: start;
   font-size: 8px;
 }
 
-.horraire p {
+#Vincent .horraire p {
   font-weight: 100;
   font-size: 7px;
 }
 
-@media screen and (min-width: 800px) {
-  .ham {
+@media screen and (min-width: 934px) {
+  #Vincent .ham {
     display: none;
   }
   
-  .container-menu {
+  #Vincent .container-menu {
     position: absolute;
     transform: translateX(0);
     display: flex;
@@ -232,65 +232,77 @@ a {
     transition: none;
     backdrop-filter: blur(8px);
     flex-basis: 1.5em;
+    flex: 1;
+    
   }
 
-  .menu a::first-letter {
+
+
+  #Vincent .menu a::first-letter {
     color: #266658;
     font-size: 1.4em;
     font-weight: 600;
   }
 
-  .menu {
-    width: 25%;
+  #Vincent a {
+    cursor: pointer;
   }
   
-  header {
+  #Vincent header {
     height: 14%;
     width: 100%;
     padding: 5px 15px;
     position: fixed;
     top: 0;
     left: 0;
+    
   }
 
-  .container-logo{
+  #Vincent .container-logo{
   z-index: 6;
-    display: flex;
-    justify-content: center;
      position: fixed;
      max-height: 80px;
+     transform: translateX(45vw);
      top: 30px;
-     width: 100%;
+     width: fit-content;
    }
    
-   .logo {
-    
+   #Vincent .logo {
+    cursor: pointer;
      z-index: 5;
-     width: 7%;
+     width: 50%;
      display: flex;
      align-self: center;
    }
   
-.menu1{
+   #Vincent .menu1{
   width: 60%;
 }
-.menu2{
+#Vincent .menu2{
   width: 60%;
 }
-.menu3{
+#Vincent .menu3{
   width: 40%;
 }
-.menu4{
+#Vincent .menu4{
   width: 40%;
+  
+  
+  
 }
-.menu5{
+#Vincent .menu5{
   width: 40%;
+  
 }
 
-   .menu-none{
-    width: 60%;
-   }
-   .container-fond {
+
+#Vincent .menu-none{
+  width: 100%;
+  border: 1px solid red;
+  
+}
+
+#Vincent .container-fond {
     z-index: -1;
     position: relative;
     margin-top: 135px;
@@ -302,15 +314,10 @@ a {
     
   }
 
-  .container-fond {
+  #Vincent .container-fond {
     width: 100%;
     
 
   }
-
-  .menu:hover {
-color: red;
-  }
-  
 
 }
