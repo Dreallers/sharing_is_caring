@@ -1,0 +1,324 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;   
+}
+
+
+    
+/* conteneur du Sharring is caring*/
+.titre{
+    display: flex;
+    width: 100%;
+    margin-top: 35px;
+
+}
+
+/* Sharing is caring*/
+#texte{
+    font-family: 'Roboto Condensed', sans-serif;
+    width: 60%;
+    font-weight: 500;
+    font-size: 25px;
+}
+
+
+
+
+
+#trait-1{
+    width: 10%;
+    height: 3px;
+    background-color: #266654;
+    margin-top: 20px;
+
+}
+
+
+#trait-2{
+    width: 60%;
+    background-color: #ECB568;
+    height: 3px;
+    margin-top: 20px;
+    
+}
+
+/*Texte de bienvenue*/
+#box-presentation{
+    background-color: rgba(236, 181, 104, 0.2);
+    font-family: 'Roboto Condensed', sans-serif;
+    margin-bottom: 50px;
+
+    
+}
+
+p::first-letter{
+    font-size: 30px;
+}
+
+
+p{
+    word-spacing: -.1ch;
+    text-align: justify;
+    font-size: 14px;
+    padding: 15px;
+    
+}
+/*Slide*/
+.contener_image{
+    width: 100%;
+    height: 150px;
+    overflow: hidden;
+    position: relative;
+    z-index: -1;
+    
+}
+
+#slide{
+    display: flex;
+    position: relative;
+    height: auto;
+}
+
+.image_nature{
+    width: 100%;
+    
+}
+
+/*Flèche du slide*/
+#precedent, #suivant{
+    position: absolute;
+    font-size: 45px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: white;
+    cursor: pointer;
+    
+}
+
+
+#precedent{
+    left: 0;
+}
+
+#suivant{
+    right: 0;
+    
+}
+
+/*Chat bot*/
+.chat-bot{
+    width: 100%;
+    position: fixed;
+    flex-direction: row-reverse;
+    display: flex;
+    bottom: 0;
+    z-index: 1;
+
+    /*
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    -ms-transition: all 0.2s;
+    -o-transition: all 0.2s;
+    transition: all 0.2s;
+*/
+}
+/*
+.chat-bot img:hover {
+    transform:scale(1.2);
+    transition: 0.6s;
+
+
+}
+*/
+.chat-bot img{
+
+    width: 20%;
+    cursor: pointer;}
+
+.contener-chat{
+    position: absolute;
+    z-index: 0;
+    width: 50%;
+    height: 45%;
+    bottom: 70px;
+    background-color: #DDD1A7;
+    border-radius: 5px;
+    box-shadow: 2px 2px 0px 0px #000000b1;
+    right: 60px;
+    display: flex;
+    align-items: end;
+
+}
+
+ #message-wallie{
+    top: 0;
+    border: 1px solid red;
+}
+
+
+#text-chat{
+    display: flex;
+    height: 7%;
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    align-items: flex-end;
+    justify-content: center;
+    margin-left: 4px;
+    margin-right: 4px;
+
+}
+
+.logo-envoyer{
+    position: absolute;
+    width: 14%;
+    right: 3px;
+    margin-bottom: 6px;
+    cursor: pointer;
+}
+
+
+@media screen and ( min-width: 800px ) {
+    
+    /* conteneur du Sharring is caring*/
+.titre{
+    margin-top: 35px;
+    width: 100%;
+    display: flex;
+
+    
+}
+
+    
+    /* Sharing is caring*/
+#texte{
+    font-family: 'Roboto Condensed', sans-serif;
+    display: flex;
+    width: fit-content;
+    font-weight: 500;
+    font-size: 64px;
+
+}
+    
+#trait-1{
+    flex: 0.1;
+    height: 3px;
+    background-color: #266654;
+    margin-top: 55px;
+    
+}
+    
+    
+#trait-2{
+    flex: 1;
+    background-color: #ECB568;
+    height: 3px;
+    margin-top: 55px;
+        
+}
+    
+    /*Texte de bienvenue*/
+#box-presentation{
+    background-color: rgba(236, 181, 104, 0.2);
+    font-family: 'Roboto Condensed', sans-serif;
+    margin-top: 10px;
+    margin-bottom: 50px;
+}
+    
+p::first-letter{
+    font-size: 30px;
+}
+    
+    
+p{
+    word-spacing: -.1ch;
+    text-align: justify;
+    padding: 50px;
+    font-size: clamp(1rem, 4vw, 2rem);
+        
+}
+    /*Slide*/
+.contener_image{
+    height: 500px;
+    overflow: hidden;
+    position: relative;
+
+
+}
+    
+#slide{
+    display: flex;
+    position: relative;
+    height: 100%;
+}
+    
+.image_nature{
+    width: 100%;
+    object-fit: cover;
+
+
+
+
+}
+    
+    /*Flèche du slide*/
+#precedent, #suivant{
+    position: absolute;
+    font-size: 55px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: white;
+    cursor: pointer;
+    
+
+
+}
+
+    
+    /* Hover sur les flèches*/
+#precedent:hover, #suivant:hover{
+    font-size: 100px;
+}
+    
+    
+#precedent{
+    left: 0;
+}
+    
+#suivant{
+    right: 0;
+        
+}
+
+/*Chat bot*/
+.chat-bot{
+    width: 100%;
+    position: fixed;
+    flex-direction: row-reverse;
+    display: flex;
+
+    /*
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    -ms-transition: all 0.2s;
+    -o-transition: all 0.2s;
+    transition: all 0.2s;
+*/
+}
+/*
+.chat-bot img:hover {
+    transform:scale(1.2);
+    transition: 0.6s;
+
+
+}
+*/
+.chat-bot img{
+
+    cursor: pointer;
+
+}
+
+}
+    
