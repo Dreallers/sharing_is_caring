@@ -112,10 +112,7 @@ body {
   right: 0;
 }
 
-#Vincent .container-global-fond {
-  width: 100%;
-  flex: 1;
-}
+
 
 #Vincent .container-fond {
   z-index: -1;
@@ -235,7 +232,29 @@ body {
     flex: 1;
     
   }
+  #Vincent  .menu:hover {
+    transform: translateY(-5px);
+    transition: transform 0.6s ease-in-out;
+  }
+  #Vincent a::after {
+    content: "";
+    position: absolute;
+    top: 20px;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background: #266658;
+    transition: transform 0.6s ease-in-out;
+    transform: scale(0);
+  }
 
+  #Vincent .menu a{
+    position: relative;
+  }
+  
+  #Vincent a:hover::after {
+    transform: scale(1);
+  }
 
 
   #Vincent .menu a::first-letter {
@@ -298,7 +317,6 @@ body {
 
 #Vincent .menu-none{
   width: 100%;
-  border: 1px solid red;
   
 }
 
