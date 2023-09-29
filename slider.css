@@ -7,7 +7,7 @@ body{
 
     
 /* conteneur du Sharring is caring*/
-.titre{
+#tony .titre{
     display: flex;
     width: 100%;
     margin-top: 35px;
@@ -15,7 +15,7 @@ body{
 }
 
 /* Sharing is caring*/
-#texte{
+#tony #texte{
     font-family: 'Roboto Condensed', sans-serif;
     width: 60%;
     font-weight: 500;
@@ -26,7 +26,7 @@ body{
 
 
 
-#trait-1{
+#tony #trait-1{
     width: 10%;
     height: 3px;
     background-color: #266654;
@@ -35,7 +35,7 @@ body{
 }
 
 
-#trait-2{
+#tony #trait-2{
     width: 60%;
     background-color: #ECB568;
     height: 3px;
@@ -44,7 +44,7 @@ body{
 }
 
 /*Texte de bienvenue*/
-#box-presentation{
+#tony #box-presentation{
     background-color: rgba(236, 181, 104, 0.2);
     font-family: 'Roboto Condensed', sans-serif;
     margin-bottom: 50px;
@@ -52,12 +52,12 @@ body{
     
 }
 
-p::first-letter{
+#tony p::first-letter{
     font-size: 30px;
 }
 
 
-p{
+#tony p{
     word-spacing: -.1ch;
     text-align: justify;
     font-size: 14px;
@@ -65,7 +65,7 @@ p{
     
 }
 /*Slide*/
-.contener_image{
+#tony .contener_image{
     width: 100%;
     height: 150px;
     overflow: hidden;
@@ -74,19 +74,19 @@ p{
     
 }
 
-#slide{
+#tony #slide{
     display: flex;
     position: relative;
     height: auto;
 }
 
-.image_nature{
+#tony .image_nature{
     width: 100%;
     
 }
 
 /*Flèche du slide*/
-#precedent, #suivant{
+#tony #precedent, #suivant{
     position: absolute;
     font-size: 45px;
     top: 50%;
@@ -97,17 +97,17 @@ p{
 }
 
 
-#precedent{
+#tony #precedent{
     left: 0;
 }
 
-#suivant{
+#tony #suivant{
     right: 0;
     
 }
 
 /*Chat bot*/
-.chat-bot{
+#tony .chat-bot{
     width: 100%;
     position: fixed;
     flex-direction: row-reverse;
@@ -131,12 +131,12 @@ p{
 
 }
 */
-.chat-bot img{
+#tony .chat-bot img{
 
     width: 20%;
     cursor: pointer;}
 
-.contener-chat{
+#tony .contener-chat{
     position: absolute;
     z-index: 0;
     width: 50%;
@@ -151,13 +151,13 @@ p{
 
 }
 
- #message-wallie{
+#tony #message-wallie{
     top: 0;
     border: 1px solid red;
 }
 
 
-#text-chat{
+#tony #text-chat{
     display: flex;
     height: 7%;
     width: 100%;
@@ -170,7 +170,7 @@ p{
 
 }
 
-.logo-envoyer{
+#tony .logo-envoyer{
     position: absolute;
     width: 14%;
     right: 3px;
@@ -182,7 +182,7 @@ p{
 @media screen and ( min-width: 800px ) {
     
     /* conteneur du Sharring is caring*/
-.titre{
+#tony .titre{
     margin-top: 35px;
     width: 100%;
     display: flex;
@@ -192,7 +192,7 @@ p{
 
     
     /* Sharing is caring*/
-#texte{
+#tony #texte{
     font-family: 'Roboto Condensed', sans-serif;
     display: flex;
     width: fit-content;
@@ -201,7 +201,7 @@ p{
 
 }
     
-#trait-1{
+#tony #trait-1{
     flex: 0.1;
     height: 3px;
     background-color: #266654;
@@ -210,7 +210,7 @@ p{
 }
     
     
-#trait-2{
+#tony #trait-2{
     flex: 1;
     background-color: #ECB568;
     height: 3px;
@@ -219,19 +219,19 @@ p{
 }
     
     /*Texte de bienvenue*/
-#box-presentation{
+#tony #box-presentation{
     background-color: rgba(236, 181, 104, 0.2);
     font-family: 'Roboto Condensed', sans-serif;
     margin-top: 10px;
     margin-bottom: 50px;
 }
     
-p::first-letter{
+#tony p::first-letter{
     font-size: 30px;
 }
     
     
-p{
+#tony p{
     word-spacing: -.1ch;
     text-align: justify;
     padding: 50px;
@@ -239,7 +239,7 @@ p{
         
 }
     /*Slide*/
-.contener_image{
+#tony .contener_image{
     height: 500px;
     overflow: hidden;
     position: relative;
@@ -247,13 +247,13 @@ p{
 
 }
     
-#slide{
+#tony #slide{
     display: flex;
     position: relative;
     height: 100%;
 }
     
-.image_nature{
+#tony .image_nature{
     width: 100%;
     object-fit: cover;
 
@@ -263,7 +263,7 @@ p{
 }
     
     /*Flèche du slide*/
-#precedent, #suivant{
+#tony #precedent, #suivant{
     position: absolute;
     font-size: 55px;
     top: 50%;
@@ -277,22 +277,22 @@ p{
 
     
     /* Hover sur les flèches*/
-#precedent:hover, #suivant:hover{
+#tony #precedent:hover, #suivant:hover{
     font-size: 100px;
 }
     
     
-#precedent{
+#tony #precedent{
     left: 0;
 }
     
-#suivant{
+#tony #suivant{
     right: 0;
         
 }
 
 /*Chat bot*/
-.chat-bot{
+#tony .chat-bot{
     width: 100%;
     position: fixed;
     flex-direction: row-reverse;
@@ -314,7 +314,7 @@ p{
 
 }
 */
-.chat-bot img{
+#tony .chat-bot img{
 
     cursor: pointer;
 
