@@ -1,6 +1,6 @@
 const menuHamburger = document.querySelector(".menu-hamburger");
-const navBar = document.querySelector(".container-menu");
+const containerNavBar = document.querySelector(".container-nav-bar");
 
 menuHamburger.addEventListener("click", () => {
-  navBar.classList.toggle("mobile-menu");
+  containerNavBar.classList.toggle("mobile-menu");
 });
