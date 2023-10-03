@@ -14,18 +14,10 @@ body {
     flex-direction: column;
   }
 
-  #Vincent .menu:hover {
-    transform: translateY(-5px);
-    transition: transform 0.6s ease-in-out;
-  }
-  #Vincent a::after {
-    content: "";
-    position: absolute;
-    top: 20px;
-  }
 
   #Vincent .container-nav-bar{
     z-index: 6;
+    
     transform: translateX(-100%);
     top: 0;
     left: 0;
@@ -51,21 +43,6 @@ body {
     text-decoration: none;
   }
 
-
-  #Vincent .menu a{
-    position: relative;
-  
-  }
-  
-  #Vincent a:hover::after {
-    transform: scale(1);
-  }
-
-
-  #Vincent .menu a::first-letter {
-    color: #266658;
-    font-size: 1.4em;
-  }
   #Vincent .container-nav-bar li::first-letter {
     color: #266654;
     font-weight: 600;
