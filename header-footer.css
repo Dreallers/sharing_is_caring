@@ -232,7 +232,7 @@ body {
     flex: 1;
     
   }
-  #Vincent  .menu:hover {
+  #Vincent .menu:hover {
     transform: translateY(-5px);
     transition: transform 0.6s ease-in-out;
   }
@@ -250,6 +250,7 @@ body {
 
   #Vincent .menu a{
     position: relative;
+  
   }
   
   #Vincent a:hover::after {

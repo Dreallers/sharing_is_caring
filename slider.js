@@ -15,8 +15,3 @@ setInterval("changeSlide(1)", 4000)
 
 
 
-
-
-const chat = document.querySelector(messageBot);
-
-    chat = alert("j'ai cliqué");

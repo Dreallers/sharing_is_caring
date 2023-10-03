@@ -27,7 +27,7 @@
       border-radius: 50%;
       width: 108px;
       height: 108px;
-      border: 2px solid green;
+      border: 2px solid #266654;
       margin-left: 30px;
       object-fit: cover;
     }
@@ -36,7 +36,7 @@
       border-radius: 50%;
       width: 108px;
       height: 108px;
-      border: 2px solid green;
+      border: 2px solid #266654;
   
       object-fit: cover;
     }
@@ -54,16 +54,26 @@
       font-size: 11px;
     }
     #mamady .text-arnaud {
-      color: green;
-      margin: 0 0 10% 33%;
+      color: rgb(0, 0, 0);
+      margin: 0 0 10% 10%;
       width: 200px;
       height: 199px;
       font-style: italic;
       font-size: 11px;
+
     }
+
+    #mamady .text-arnaud p{
+      text-align: justify;
+    }
+    #mamady .text-jessica p{
+      text-align: justify;
+    }
+    
+    
     p::first-letter {
       font-size: 20px;
-      color: green;
+      color: #266654;
     }
     span {
       font-size: 10px;
