@@ -14,12 +14,13 @@
   width: 40%
 }
 
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 800px) {
   
   #alexandre .allTitles {
     display: flex;
     flex-direction: row;
     align-items: flex-end;
+
   }
   #alexandre .titleO {
     width: max-content;
@@ -90,11 +91,11 @@
 
   #alexandre img {
     width: 100%;
-    height: 150px;
+    height: 100%;
   }
 }
 
-@media screen and (min-width: 361px) {
+@media screen and (min-width: 801px) {
 
   #alexandre .subTitleTrait {
         display:flex;
