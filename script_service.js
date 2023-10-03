@@ -12,7 +12,7 @@ function openspace() {
 document.getElementById("openspace").addEventListener("click", openspace);
 
 function detente() {
-  document.getElementById("img").src = "imgDétente.jpg";
+  document.getElementById("img").src = "";
   document.getElementById("title").innerHTML = "DETENTE";
   document.getElementById("detente").style.color= "#266654";
   document.getElementById("openspace").style.color = "white";
@@ -39,7 +39,7 @@ function barista() {
 document.getElementById("barista").addEventListener("click", barista);
 
 function restauration() {
-  document.getElementById("img").src = "restaurant1.jpg";
+  document.getElementById("img").src = "";
   document.getElementById("title").innerHTML = "RESTAURATION";
   document.getElementById("restauration").style.color= "#266654";
   document.getElementById("detente").style.color = "white";
