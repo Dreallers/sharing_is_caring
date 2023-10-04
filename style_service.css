@@ -206,5 +206,71 @@
     width: 40%;
     
   }
-  
+}
+
+@media screen and (min-width: 1200px) {
+
+  #alexandre .txt {
+    font-size: 18px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    width: 100%;
+  }
+
+  #alexandre .italic {
+    font-size: 16px;
+    font-style: italic;
+    padding-top: 15px;
+  }
+
+  #alexandre .titleO {
+    width: max-content;
+    color: white;
+    font-size: 8px;
+    font-weight: bold;
+    padding: 10px 10px 5px 10px;
+    background-color: #ddd1a7;
+    border-radius: 30% 30% 0% 0%;
+  }
+
+  #alexandre .titleE {
+    width: max-content;
+    color: white;
+    font-size: 8px;
+    font-weight: bold;
+    padding: 10px 10px 5px 10px;
+    background-color: #ddd1a7;
+    border-radius: 30% 30% 0% 0%;
+  }
+
+  #alexandre .titleB {
+    width: max-content;
+    color: white;
+    font-size: 8px;
+    font-weight: bold;
+    padding: 10px 10px 5px 10px;
+    background-color: #ddd1a7;
+    border-radius: 30% 30% 0% 0%;
+  }
+
+  #alexandre .titleR {
+    width: max-content;
+    color: white;
+    font-size: 8px;
+    font-weight: bold;
+    padding: 10px 10px 5px 10px;
+    background-color: #ddd1a7;
+    border-radius: 30% 30% 0% 0%;
+  }
+
+  #alexandre .subTitle {
+    font-size: 20px;
+    font-weight: bold;
+    color: #266654;
+    margin-bottom: 5px;
+  }
+
+  #alexandre h2{
+    font-size: 20px;
+  } 
 }
