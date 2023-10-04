@@ -1,20 +1,12 @@
-// JAVASCRIPT RESERVATION & FORMULAIRE ALEXANDRA //
+// DEBUT JAVASCRIPT POP UP  ALEXANDRA //
 
-document.getElementById("contactForm").addEventListener("submit", function (event){
-event.preventDefault ();
+function popup() {
+    el = document.getElementById("popup");
+    el.style.visibility = el.style.visibility == "visible" ? "hidden" : "visible";
+  }
 
-
-
-const name = document.getElementById ("name").value;
-const email = document.getElementById ("email").value;
-const message = document.getElementById ("message").value;
-
-
-
-if (name === "" || email === "" || message === "") {
-alert('Formulaire invalide. Veuillez remplir tous les champs.');
-} else {
-alert('Merci pour votre message. Nous reviendrons vers vous rapidement !');
-}
-
-});
+// FIN JAVASCRIPT POP UP  ALEXANDRA //
+ 
+    
+    
+    
