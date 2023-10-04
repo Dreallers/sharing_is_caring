@@ -1,128 +1,112 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="reservation-style.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="reservation-style.css" />
 </head>
-
-
-
-<!-- DEBUT HTML RESERVATION ET CONTACT ALEXANDRA -->
-<div id="ALEXANDRA">
-
 <body>
-  
-  <style>@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');</style>
+<div id="ALEXANDRA">
+<div class="container-global">
+<div class="container-resa-contact">
+
+    <div class="titre-trait">
+        <div class="titre">
+        <h1>RESERVATION</h1>
+        </div>
+        <div class="trait"></div>
+        </div>
 
 
-    <!-- EN TETE DE LA PAGE ET TRAIT -->
+        <div class="container-forfait">
 
-    <div class="container-resa">
-
-      <div class="titre">
-      <h1>RESERVATION</h1>
-      </div>
-      <div class="trait"></div>
-    
-    </div>
-
-
-  <div class="container-global">
-
-    <!-- LES FORFAITS AVEC PRIX -->
-
-    <div class="container-forfait">
-
-      <div class="demi-journée">
-      <article>FORFAIT</article>
-      <article>Demi-journée</article>
-      <hr></hr>
-      <article>15€</article>
-
-      <div class="repas">
-      <article>+5€ /repas</article>
-      </div>
-      </div>
-
-
-      <div class="journée">
-      <article>FORFAIT</article>
-      <article>Journée</article>
-      <hr></hr>
-      <article>25€</article>
-
-      <div class="repas">
-      <article>+5€ /repas</article>
-      </div>
-      </div>
-
-
-      <div class="semaine">
-      <article>FORFAIT</article>
-      <article>Semaine</article>
-      <hr></hr>
-      <article>115€</article>
-
-      <div class="repas">
-      <article>+5€ /repas</article>
-      </div>
-      </div>
-    
-    </div>
-
-    <!-- FORMULAIRE DE CONTACT -->
-
-    <div class="formulaire">
-
-      <section class="contact">
-      <div id="titre">CONTACT</div>
-      <div id="trait2"></div>
-      </section>
-
-    <div class="input-form">
+            <div class="demi-journée">
+            <article>FORFAIT</article>
+            <article class="margin">Demi-journée</article>
+            <div class="trait-forfait"></div>
+            <article>15€</article>
       
-    <form id="contactForm">
-
-      <div>
-      <label for="name">Nom</label><br />
-      <input type="text" id="name" placeholder="Dupont Jessica" />
-      </div>
-
-      <div>
-      <label for="email">E-mail</label><br />
-      <input type="email" id="email" placeholder="JessicaDupont@hotmail.fr"/>
-      </div>
-
-      <div>
-      <label for="message">Message</label><br />
-      <textarea id="message" rows="10" placeholder="Entrez votre message"></textarea>
-      </div>
-
-      <button type="submit" value="Submit"a href="#" onclick="popup()">Envoyer</button>
-        
-    </div>
-  </div> 
-        
-    <!-- POP UP-->
-
-      <div id="popup"> 
-      <a href="#" onclick="popup()">×</a>
-      <p>Merci pour votre message.
-      <br> 
-      <br>
-      Nous reviendrons vers vous rapidement !</p>
-      </div>
+            <div class="repas">
+            <article>+5€ /repas</article>
+            </div>
+            </div>
       
-    </form>
       
-    <script src="reservation-script.js"></script>
+            <div class="journée">
+            <article>FORFAIT</article>
+            <article class="margin">Journée</article>
+            <div class="trait-forfait"></div>
+            <article>25€</article>
+      
+            <div class="repas">
+            <article>+5€ /repas</article>
+            </div>
+            </div>
+      
+      
+            <div class="semaine">
+            <article>FORFAIT</article>
+            <article class="margin">Semaine</article>
+            <div class="trait-forfait"></div>
+            <article>115€</article>
+      
+            <div class="repas">
+            <article>+5€ /repas</article>
+            </div>
+            </div>
+          
+          </div>
+      
+          <!-- FORMULAIRE DE CONTACT -->
+      
+          <div class="formulaire">
+      
+            <section class="contact">
+            <div id="titre">CONTACT</div>
+            <div id="trait2"></div>
+            </section>
+      
+          <div class="input-form">
+            
+          <form id="contactForm">
+      
+            <div>
+            <label for="name">Nom</label><br />
+            <input type="text" id="name" placeholder="Dupont Jessica" />
+            </div>
+      
+            <div>
+            <label for="email">E-mail</label><br />
+            <input type="email" id="email" placeholder="JessicaDupont@hotmail.fr"/>
+            </div>
+      
+            <div>
+            <label for="message">Message</label><br />
+            <textarea id="message" rows="10" placeholder="Entrez votre message"></textarea>
+            </div>
+      
+            <button type="submit" value="Submit"a href="#" onclick="popup()">Envoyer</button>
+              
+          </div>
+        </div>
+           <!-- POP UP-->
+      <div class="container-popup">
+        <div id="popup"> 
+        <a href="#" onclick="popup()">×</a>
+        <p>Merci pour votre message.
+        <br> 
+        <br>
+        Nous reviendrons vers vous rapidement !</p>
+        </div>
+        </div>
+         </form>
+        </div>
+</div></div>
+</div>
+
     
 </body>
+
+<script src="reservation-script.js"></script>
 </html>
-<!-- FIN HTML RESERVATION ET CONTACT ALEXANDRA -->
-
-
-   
-
