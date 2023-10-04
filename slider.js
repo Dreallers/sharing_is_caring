@@ -15,3 +15,13 @@ setInterval("changeSlide(1)", 4000)
 
 
 
+const chatBot = document.getElementById("chat")
+const buttonChat = document.getElementById("message-bot")
+
+
+function animation(){
+    chatBot.classList.toggle("visible")
+}
+    
+
+buttonChat.addEventListener("click", animation)

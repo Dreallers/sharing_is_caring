@@ -1,10 +1,14 @@
-body{
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;   
 }
 
 
+   
+#tony p, #texte{
+    font-family: 'Roboto Condensed', sans-serif;
+}
     
 /* conteneur du Sharring is caring*/
 #tony .titre{
@@ -16,7 +20,6 @@ body{
 
 /* Sharing is caring*/
 #tony #texte{
-    font-family: 'Roboto Condensed', sans-serif;
     width: 60%;
     font-weight: 500;
     font-size: 25px;
@@ -40,23 +43,20 @@ body{
 /*Texte de bienvenue*/
 #tony #box-presentation{
     background-color: rgba(236, 181, 104, 0.2);
-    font-family: 'Roboto Condensed', sans-serif;
     margin-bottom: 50px;
     display: flex;
+    padding: 15px;
 
 }
 
-#tony p::first-letter{
+#tony #box-presentation p::first-letter {
     font-size: 30px;
 }
 
 
 #tony p{
     word-spacing: -.1ch;
-    text-align: justify;
-    font-size: 14px;
-    padding: 15px;
-    
+    font-size: 14px;    
 }
 /*Slide*/
 #tony .contener_image{
@@ -102,37 +102,108 @@ body{
 
 /*Chat bot*/
 #tony .chat-bot{
-    width: 100%;
+    width: 65px;
+    aspect-ratio: 1/1;
     position: fixed;
-    flex-direction: row-reverse;
-    display: flex;
-    bottom: 0;
+    bottom: 0px;
+    right: 10px;
     z-index: 1;
-
-    /*
-    -webkit-transition: all 0.2s;
-    -moz-transition: all 0.2s;
-    -ms-transition: all 0.2s;
-    -o-transition: all 0.2s;
-    transition: all 0.2s;
-*/
 }
-/*
-.chat-bot img:hover {
-    transform:scale(1.2);
-    transition: 0.6s;
-
-
-}
-*/
 #tony .chat-bot img{
-
-    width: 20%;
+    width: 100%;
     cursor: pointer;
-
 }
 
+#tony #chat{
+    transition: 0.3s;
+    transform: scale(0);
+    transform-origin: bottom right;
+    width: 50%;
+    height: 40%;
+    position: fixed;
+    right: 30px;
+    bottom: 80px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 15px;
+    overflow: hidden;
+    border: 2px #ECB568 solid;
+}
 
+#tony #chat.visible{
+    transform: scale(1);  
+}
+
+#tony .chat-header{
+    width: 100%;
+    height: 60px;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid #ECB568;
+    font-family: 'Roboto Condensed', sans-serif;
+    gap: 10px;
+}
+
+#tony .chat-header p{
+    font-size: 15px;
+}
+#tony .button-online{
+    width: 10px;
+    aspect-ratio: 1/1;
+    border-radius: 5px;
+    background-color: rgb(40, 181, 40);
+}
+
+#tony .chat-body{
+    padding: 8px;
+    height: calc(100% - 60px);
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#tony .fake{
+    background-color: #ECB568;
+    padding: 8px;
+    width: 80%;
+    border-radius: 0px 10px 0px 10px;
+}
+
+#tony .input-contener{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+#tony .input-contener input{
+    width: 80%;
+    padding: 5px;
+    height: 20px;
+}
+
+#tony .input-contener button{
+    transition: 0.3s;
+    border-radius: 50%;
+    aspect-ratio: 1/1;
+    overflow: hidden;
+    width: 30px;
+    color: inherit;
+    border: none;
+    font: inherit;
+    cursor: pointer;
+    outline: inherit;
+}
+
+#tony .input-contener button:hover{
+    opacity: 0.7;
+	
+}
+
+#tony .input-contener img{
+    width: 100%;
+}
 
 
 @media screen and ( min-width: 800px ) {
@@ -143,10 +214,10 @@ body{
     width: 100%;
     display: flex;
 
-    
+
 }
 
-    
+
     /* Sharing is caring*/
 #tony #texte{
     font-family: 'Roboto Condensed', sans-serif;
@@ -182,19 +253,30 @@ body{
     margin-bottom: 50px;
     width: 80%;
     margin-left: 10%;
+    padding: 25px;
 }
     
-#tony p::first-letter{
+#tony #box-presentation p::first-letter{
     font-size: 45px;
 }
     
     
-#tony p{
+#tony #box-presentation p{
     word-spacing: -.1ch;
-    padding: 50px;
-    font-size: 25px      
+    font-size: 20px;      
+}
+#tony #chat{    
+    width: 25%;
+    height: 40%;
 }
 
+#tony .chat-header p{
+    font-size: 15px;
+}
+
+#tony .fake p{
+    font-size: 15px;
+}
 
     /*Slide*/
 #tony .contener_image{
@@ -225,15 +307,12 @@ body{
     transform: translateY(-50%);
     color: rgb(255, 255, 255);
     cursor: pointer;
-    
-
-
 }
 
     
     /* Hover sur les flèches*/
 #tony #precedent:hover, #suivant:hover{
-    font-size: 100px;
+    opacity: 0.7;
 }
     
     
@@ -246,77 +325,9 @@ body{
     margin-right: 155px;       
 }
 
-/*Chat bot*/
-#tony .chat-bot{
-    width: 35%;
-    position: fixed;
-    right: 0;
-    display: flex;
-
-
-    -webkit-transition: all 0.2s;
-    -moz-transition: all 0.2s;
-    -ms-transition: all 0.2s;
-    -o-transition: all 0.2s;
-    transition: all 0.2s;
-
-}
-
-#tony .chat-bot img:hover {
-    transform:scale(1.2);
-    transition: 0.6s;
-
-
-}
-
-#tony .contener-chat{
-    position: absolute;
-    width: 20%;
-    height: 38%;
-    bottom: 70px;
-    background-color: #000000e1;
-    border-radius: 5px;
-    box-shadow: 2px 2px 0px 0px #000;
-    right: 60px;
-    display: flex;
-    flex-direction:row-reverse;
-
+#tony .chat-bot img:hover{
+    opacity: 0.7;
 }
 
 
-#tony #message-wallie{
-    width: 70%;
-    background-color: #266654;
-    height: 23%;
-    border-radius: 5px;
-    color: white;
-    margin: 5px;
-    font-size: 15px;
-
-}
-
-
-#tony #text-chat{
-    
-    width: 96%;
-    height: 23px;
-    margin-top: 116%;
-    position: absolute;
-    background: transparent;
-    color: white;
-    border: none;
-
-
-
-}
-
-
-#tony .logo-envoyer{
-    position: absolute;
-    width: 13%;
-    right: 2px;
-    margin-bottom: 8px;
-    cursor: pointer;
-    top: 89%;
-}
 }
