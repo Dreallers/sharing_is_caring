@@ -3,120 +3,192 @@
     padding: 0;
     box-sizing: border-box;
   }
-  
-  
-    /* changer la couleur du titre h1*/
-    body {
-      width: 100vw;
-      height: 100vh;
-      font-family: "Roboto Condensed", sans-serif;
-    }
-    #mamady .container {
-      z-index: 2;
-      width: 100%;
-      height: 100%;
-    }
-    #mamady .presentator h1 {
-      color: #ecb568;
-      font-size: 34px;
-      padding: 30px;
-    }
+/* changer la couleur du titre h2*/
+
+h2{
+  color:rgba(38, 102, 84, 1)
+}
+body {
+  width: 100vw;
+  height: 100vh;
+  font-family: "Roboto Condensed", sans-serif;
+}
+#mamady .container {
+  width: 100%;
+  height: 100%;
+}
+.background-polygon {
+  z-index: -2;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #249a6e;
+  opacity: 10%;
+  clip-path: polygon(0 15%, 100% 10%, 100% 85%, 0 90%);
+}
+#mamady .presentator h1 {
+  color: #ecb568;
+  font-size: 34px;
+  padding: 30px;
+}
+.jessica , .arnaud{
+  position: relative;
+
+  padding: 20px;
+}
+#mamady .jessica .image, #mamady .arnaud .image-arnaud{
+  position: absolute;
+  width: 30%;
+}
+.jessica{
+  display: flex;
+
+  justify-content: flex-end;
+}
+
+#mamady .jessica .image{
+
+  left: 20px;
+}
+
+#mamady  .arnaud .image-arnaud{
+  right: 20px;
+}
+    /* changer le format des image avec border-radius à 50%*/
     /* changer le format des image avec border-radius à 50%*/
   
-    #mamady .jessica .image .img1 {
-      border-radius: 50%;
-      width: 108px;
-      height: 108px;
-      border: 2px solid green;
-      margin-left: 30px;
-      object-fit: cover;
-    }
+/* changer le format des image avec border-radius à 50%*/
   
-    #mamady .image-arnaud .arnaudimg {
-      border-radius: 50%;
-      width: 108px;
-      height: 108px;
-      border: 2px solid green;
-  
-      object-fit: cover;
-    }
-  
+#mamady .jessica .image .img1 {
+  border-radius: 50%;
+  width: 100%;
+  aspect-ratio: 1/1;
+  border: 4px solid rgba(38, 102, 84, 1);
+  object-fit: cover;
+}
+#mamady .image-arnaud .arnaudimg {
+  border-radius: 50%;
+  width: 100%;
+  aspect-ratio: 1/1;
+  border: 4px solid rgba(38, 102, 84, 1);
+  object-fit: cover;
+}
+    /* on commence à styliser les textes*/
     /* on commence à styliser les textes*/
   
-    #mamady .text-jessica {
-      color: black;
+/* on commence à styliser les textes*/
   
-      margin: 0 0 10% 33%;
-      width: 174 px;
-      height: 188 px;
-      font-style: italic;
-      margin-right: 20px;
-      font-size: 11px;
-    }
-    #mamady .text-arnaud {
-      color: green;
-      margin: 0 0 10% 33%;
-      width: 200px;
-      height: 199px;
-      font-style: italic;
-      font-size: 11px;
-    }
-    p::first-letter {
-      font-size: 20px;
-      color: green;
-    }
-    span {
-      font-size: 10px;
-      font-weight: bold;
-    }
-    footer {
-      height: 40px;
-      margin-bottom: 0;
-    }
-  
-    .background-polygon {
-      z-index: -2;
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background-color: #249a6e;
-      opacity: 10%;
-      clip-path: polygon(0 15%, 100% 10%, 100% 85%, 0 90%);
-    }
-    #mamady .text-arnaud {
-      display: flex;
-      justify-content: flex-start;
-  
-      flex-direction: column;
-    }
-  
-  #mamady .image-arnaud {
-    display: flex;
-    justify-content: flex-end;
-    margin-right: 3rem;
-  }
-  /*
-  format desktop*/
-  @media screen and (min-width:800px){
-  
-    #mamady .jessica{
-      display: flex;
-      justify-content: center;
-  
-  
-    }
-  
-    #mamady .arnaud{
-  
+#mamady .text-jessica {
+  color: black;
+  text-align: jus;
+  font-style: italic;
+  font-size: 12px;
+  width: 50%;
+}
+
+#mamady .text-arnaud {
+  color: black;
+  font-style: italic;
+  font-size: 12px;
+  width: 50%;
+}
+p::first-letter {
+  font-size: 20px;
+  color: green;
+}
+span {
+  font-size: 10px;
+  font-weight: bold;
+}
+footer {
+  height: 40px;
+  margin-bottom: 0;
+}
+#mamady .text-arnaud {
   display: flex;
-  
-  flex-direction: row-reverse;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+#mamady .image-arnaud {
+  display: flex;
+  justify-content: flex-end;
+}
+
+@media screen and (  min-width: 600px) and (max-width:700px){
+  #mamady .text-arnaud, #mamady .text-jessica{
+    font-size: 14px;
+  }
+}
+@media screen and (  min-width: 701px){
+  #mamady .text-arnaud, #mamady .text-jessica{
+    font-size: 15px;
+  }
+
+  #mamady .jessica .image, #mamady .arnaud .image-arnaud{
+    
+    width: 25%;
+  }
+
+}
+
+
+/* format desktop*/
+@media screen and (min-width:901px){
+
+  #mamady .text-arnaud, #mamady .text-jessica{
+    font-size: 17px;
+    width: 70%;
+
+  }
+
+  #mamady .jessica{
+    margin-bottom: 20px;
+  }
+
+  #mamady .jessica .image, #mamady .arnaud .image-arnaud{
+    
+    width: 20%;
+    
+  }
+}
+
+  @media screen and (min-width:1100px){
+
+    #mamady .text-arnaud, #mamady .text-jessica{
+      font-size: 19px;
+      width: 80%;
   
     }
-  
-  
+    #mamady .jessica .image, #mamady .arnaud .image-arnaud{
+    
+      width: 15%;
+      
+    }
+    #mamady .jessica{
+      margin-bottom: 60px;
+    }
+    #mamady .jessica .image{
+
+      left: 40px;
+    }
+    #mamady .arnaud .image-arnaud{
+      right: 40px;
+    }
+    .jessica , .arnaud{
+      padding: 40px;
+    }
+   
+}
+
+@media screen and (min-width:1500px) {
+      
+  #mamady .jessica{
+    margin-bottom: 80px;
+    margin-top: 20px;
   }
+
+
   
-  
+}
