@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Alex+Brush&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Alex+Brush&display=swap');
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 
 * {
@@ -9,9 +9,10 @@
 }
 
 body {
-    
+    background-color: #a5ba5b27;
     display: flex;
     flex-direction: column;
+    animation: ;
   }
 
 
@@ -121,36 +122,31 @@ body {
     position: absolute;
     top: 10px;
     right: 50px;
-    font-family: "Alex Brush", cursive;
     font-size: 1em;
     color: white;
     animation: sharing 1s ease-in-out forwards;
+    font-style: italic;
+    
+  }
+
+  #Vincent .fond .sharing h1{
+    font-family: 'Alex Brush', cursive;
   }
 
 
-  #Vincent-footer .footer {
-    background-color: #266658;
+  #ancre_tony{
+    margin-bottom: 100px;
   }
-  
-  #Vincent-footer .footer .image-footer {
-    width: 100%;
-    height: 100px;
-    object-fit: cover;
+  #ancre_alexandre{
+    margin-bottom: 100px;
   }
-
-  #Vincent-footer .int-footer {
-    width: 100vw;
-    height: 500px;
-    margin: 0 auto;
-    font-family: "Roboto", sans-serif;
-    color: white;
+  #ancre_mamady{
+    margin-bottom: 110px;
+  }
+  #ancre_ALEXANDRA{
+    margin-bottom: 150px;
   }
 
-
-
-
-
-  
 
 
   @keyframes sharing {
@@ -165,67 +161,88 @@ body {
     }
   }
 
+  /* FOOTER CSS CHANGEMENT */
 
-  #Vincent-footer .logo-cowo {
-    width: 50vw;
-  }
-  
-  #Vincent-footer .logo-white {
-    height: 75%;
-  }
-  
-  #Vincent-footer .logo-reseaux img {
-    width: 20%;
-  }
-  #Vincent-footer .reseaux {
-    width: 50vw;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 10px;
-  }
-  
-  #Vincent-footer .reseaux p {
-    color: white;
-    padding-bottom: 5px;
-    letter-spacing: 1px;
-  }
-  #Vincent-footer .reseaux p::first-letter {
-    color: #0c2428;
-    font-weight: 600;
-    font-size: 2em;
-  }
-  
-  #Vincent-footer .logo-all {
-    display: flex;
-    height: 50%;
-  }
+#Vincent-footer .footer {
+  background-color: #266658;
+  font-family: "Roboto", sans-serif;
+  padding: 5px;
+  color: white;
+}
 
-  #Vincent-footer .logo-cowo {
-    display: flex;
-    align-items: center;
-  }
-  
-  #Vincent-footer .localisation {
-    display: flex;
-    align-items: center;
-    padding: 10px;
-  }
-  
-  #Vincent-footer .horaire {
-    display: flex;
-    align-items: center;
-    padding: 10px;
-  }
-  
-  #Vincent-footer span {
-    text-transform: uppercase;
-  }
-  
-  #Vincent-footer .horaire-localisation {
-    width: 50vw;
-  }
+#Vincent-footer .logo-cowo {
+  display: none;
+}
+
+#Vincent-footer .reseau-loc-hor {
+  display: flex;
+  gap: 50px;
+}
+
+#Vincent-footer .reseaux {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+  margin-left: -50px;
+  flex: 1;
+}
+
+#Vincent-footer .reseaux p {
+  margin-bottom: 5px;
+  font-size: 1em;
+  letter-spacing: 0.25px;
+}
+#Vincent-footer .reseaux p::first-letter {
+  color: #0c2428;
+  font-weight: bold;
+}
+
+#Vincent-footer .reseaux img {
+  width: 30px;
+  margin-bottom: 5px;
+}
+
+#Vincent-footer .localisation {
+  display: flex;
+  padding-left: 3px;
+  flex: 1;
+}
+#Vincent-footer .horaire {
+  display: flex;
+  flex: 1;
+}
+
+#Vincent-footer .horraire-localisation img {
+  width: 40px;
+  height: 40px;
+}
+
+#Vincent-footer .horraire-localisation p {
+  font-size: 0.6em;
+  color: white;
+}
+#Vincent-footer .horraire-localisation h5 {
+  font-size: 0.6em;
+}
+
+#Vincent-footer .localisation img {
+  width: 35px;
+  height: 35px;
+}
+
+#Vincent-footer .horraire-localisation {
+  flex: 1;
+}
+
+#Vincent-footer .texte {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Fin Footer */
+
+ 
 
   @media screen and (min-width: 800px)
   {
@@ -318,89 +335,99 @@ body {
         width: 100%;
       }
 
-      #Vincent-footer .footer {
-        background-color: #266658;
+
+/* VINCENT FOOTER MEDIA */
+
+
+      #Vincent-footer .logo-all {
+        display: flex;
+        padding: 10px;
+        align-items: center;
+        gap: 50px;
       }
-      
-      #Vincent-footer .footer .image-footer {
-        width: 100%;
-        height: 100px;
-        object-fit: cover;
-      }
-      
-      #Vincent-footer .int-footer {
-        height: 500px;
-        width: 50vh;
+      #Vincent-footer .reseau-loc-hor {
+        width: 50vw;
         margin: 0 auto;
-        font-family: "Roboto", sans-serif;
-        color: white;
-      }
-      #Vincent-footer .logo-cowo {
-        width: 50vw;
-      }
-      
-      #Vincent-footer .logo-white {
-        height: 100%;
-      }
-      
-      #Vincent-footer .logo-reseaux img {
-        width: 20%;
-      }
-      #Vincent-footer .reseaux {
-        width: 50vw;
-        height: 100%;
         display: flex;
         flex-direction: column;
         justify-content: center;
-        padding: 10px;
+        align-items: flex-start;
       }
-      
+      #Vincent-footer .reseaux {
+        width: 100%;
+        align-items: flex-start;
+        padding-left: 66px;
+        flex: 0;
+      }
       #Vincent-footer .reseaux p {
-        color: white;
-        padding-bottom: 5px;
-        letter-spacing: 1px;
+        margin-bottom: 15px;
+        text-align: center;
+        font-size: 1.5em;
       }
-      #Vincent-footer .reseaux p::first-letter {
-        color: #0c2428;
-        font-weight: 600;
-        font-size: 2em;
+    
+      #Vincent-footer .reseaux img {
+        width: 50px;
+        margin-bottom: 5px;
       }
-      
-      #Vincent-footer .logo-all {
+    
+      #Vincent-footer .logo-cowo {
+        display: initial;
+        width: 50vw;
         display: flex;
-        height: 50%;
+        align-items: center;
+        justify-content: right;
       }
-      
+    
+      #Vincent-footer .logo-cowo img {
+        width: 300px;
+      }
       #Vincent-footer .localisation {
         display: flex;
-        align-items: center;
-        padding: 10px;
+        padding-left: 3px;
+        flex: 0;
       }
-      
+      .reseau-loc-hor {
+        gap: 0;
+      }
+    
+      #Vincent-footer .localisation img {
+        width: 80px;
+        height: 80px;
+      }
       #Vincent-footer .horaire {
         display: flex;
-        align-items: center;
-        padding: 10px;
+        flex: 0;
       }
-      
-      #Vincent-footer span {
-        text-transform: uppercase;
+    
+      #Vincent-footer .horaire img {
+        width: 80px;
+        height: 80px;
       }
-      
-      #Vincent-footer .horaire-localisation {
-        width: 50vw;
+      .texte {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
       }
+    
+      #Vincent-footer .horraire-localisation p {
+        font-size: 0.8em;
+        color: white;
+      }
+      #Vincent-footer .horraire-localisation h5 {
+        font-size: 0.8em;
+      }
+    
+    
+    /* FIN FOOTER*/
 
       #Vincent .fond .sharing {
         font-size: 2em;
       }
       
-      }
+  }
 
       @media screen and (min-width: 480px) and (max-width : 800px) {
-        #Vincent-footer .logo-white {
-            height: 100%;
-          }
+        
           #Vincent .hamburger {
             
             right: 80px;
@@ -408,3 +435,12 @@ body {
           }
 
       }
+
+
+
+
+
+
+
+
+      

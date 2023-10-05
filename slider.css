@@ -60,6 +60,7 @@
 }
 /*Slide*/
 #tony .contener_image{
+    
     width: 100%;
     height: 150px;
     overflow: hidden;
@@ -76,6 +77,8 @@
 
 #tony .image_nature{
     width: 100%;
+   
+    margin: 0 auto;
     
 }
 
@@ -106,12 +109,20 @@
     aspect-ratio: 1/1;
     position: fixed;
     bottom: 0px;
-    right: 10px;
+    right: 1px;
     z-index: 1;
+    text-align: center;
 }
 #tony .chat-bot img{
-    width: 100%;
+    width: 70%;
     cursor: pointer;
+    animation: boucle 3s infinite ease-in-out;
+}
+
+
+@keyframes boucle {
+    to { transform: rotate(360deg);}
+    
 }
 
 #tony #chat{
@@ -130,7 +141,8 @@
 }
 
 #tony #chat.visible{
-    transform: scale(1);  
+    transform: scale(1);
+    z-index: 6;  
 }
 
 #tony .chat-header{
@@ -292,7 +304,7 @@
     position: relative;
     height: 80%;
     width: 80%;
-    margin-left: 155px;
+    
 }
     
 #tony .image_nature{
@@ -325,9 +337,16 @@
     margin-right: 155px;       
 }
 
-#tony .chat-bot img:hover{
-    opacity: 0.7;
+
+#tony .chat-bot img{
+    width: 100%;
+    cursor: pointer;
 }
 
+#tony .chat-bot{
+    
+    right: 10px;
+    
+}
 
 }

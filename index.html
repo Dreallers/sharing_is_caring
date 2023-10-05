@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Static Template</title>
+    <link rel="stylesheet" href="header-footer.css" />
+    <link rel="stylesheet" href="slider.css" />
+    <link rel="stylesheet" href="style_service.css" />
+    <link rel="stylesheet" href="reservation-style.css" />
+    <link rel="stylesheet" href="team-1.css" />
+  </head>
+  <body>
+    <div id="Vincent">
+    <header>
+      <nav class="container-nav-bar">
+        <ul>
+          <li class="menu menu1"><a href="#ancre_tony">PRÉSENTATION</a></li>
+          <li class="menu menu2"><a href="#ancre_alexandre">PRESTATIONS & SERVICES</a></li>
+          <li class="menu menu3"><a href="#ancre_mamady">LA TEAM</a></li>
+          <li class="menu menu4"><a href="#ancre_ALEXANDRA">RÉSERVATIONS</a></li>
+          <li class="menu menu5"><a href="#ancre_ALEXANDRA">CONTACT</a></li>
+        </ul>
+      </nav>
+
+      <div class="logo-ham">
+        <div class="logo">
+          <a href="header-footer.html"><img src="images/-2-logo.png" alt="logo" class="logo-img" /></a>
+        </div>
+
+        <div class="hamburger">
+          <img
+            src="images/hamburger-2.png"
+            alt="hamburger"
+            class="menu-hamburger"
+          />
+        </div>
+      </div>
+
+      <div class="fond">
+        <img src="images/coworking-dsktop.jpg" alt="fond" class="fond-img" />
+        <img src="images/coworking-1.jpg" alt="fond" class="fond-img2" />
+        <div class="sharing"><h1>- " Sharing is Caring "</h1></div>
+      </div>
+    </header> </div>
+
+    <main>
+<!-- Tony-->
+<div id="ancre_tony"></div>
+<div id="tony">
+<section class="titre">
+    <div id="trait-1"></div>
+    <div id="texte">Sharing is caring</div>
+    <div id="trait-2"></div>
+</section>
+
+<section id="box-presentation">
+
+    <p>
+
+    Bienvenue dans notre espace de coworking<strong> " Sharing is caring ! "</strong><br><br>
+
+    Notre état d’esprit est vraiment orienté vers le bien être au travail et le partage. <br><br>
+
+    Nous voulons que les indépendants, personnes en recherche d’emploi se sentent bien ici et puissent échanger afin de créer un réseau. 
+
+    Ils trouveront plein de services et de repas maison, préparés avec des produits locaux et avec amour !
+
+    </p>
+
+</section>
+
+<div class="contener_image">
+    <img class="image_nature" src="images/nature.jpg" alt="Image contenant de la nature" id="slide">
+    <div class="fleche" id="precedent" onclick="changeSlide(-1)">←</div>
+    <div id="suivant" onclick="changeSlide(1)">→</div>
+</div>
+
+<div class="chat-bot">
+    <img id="message-bot" src="images/Design_sans_titre.png" alt="image du chat bot">
+
+</div>
+
+
+<div id="chat">
+    <div class="chat-header">
+        <div class="button-online"></div>
+            <p>Dites nous</p>
+        </div>
+
+
+    <div class="chat-body">
+        <div class="fake">
+            <p>Bienvenue, laissez nous un message, nous vous répondrons au plus vite</p>
+        </div>
+        <div class="input-contener">
+            <input type="text">
+                <button>
+                    <img src="images/envoyer.png" alt="envoyer">
+                </button>
+        </div>
+    </div>
+</div>
+</div>
+
+<!-- Alexandre-->
+<div id="ancre_alexandre"></div>
+<div id="alexandre">
+    <div class="services"> 
+      <div class="all">
+        <div class="allTitles">
+          <div id="openspace" class="titleO">
+            <h1>Openspace</h1>
+          </div>
+          <div id="detente" class="titleE">
+            <h1>Détente</h1>
+          </div>
+          <div id="barista" class="titleB">
+            <h1>Barista</h1> 
+          </div>
+          <div id="restauration" class="titleR">
+            <h1>Restauration</h1>
+          </div>
+        </div>
+
+        <div class="contenairTxt">
+          <div class="contenairImg">
+            <img src="./images/imgopenspacer.jpg" id="img" alt="image Openspace" />
+          </div>
+          <div class="layout">
+            <div class="subTitleTrait">
+              <div id="title" class="subTitle">
+                <h2>L'OPENSPACE</h2>
+              </div>
+              <div class="trait"></div>
+            </div>
+            <div class="txtImg">
+              <div class="txt">
+                <p>
+                  Rencontrez et échangez avec des entrepreneurs qui vous
+                  ressemblent
+                  <br />
+                  un espace de travail pensé pour votre bien-être et votre
+                  efficacité.
+                </p>
+              </div>  
+                <div class="italic">
+                  <p>
+                    A votre disposition: Bureaux équipés collectifs et
+                    individuels, fibre.
+                  </p>
+                </div>
+              </div>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!--Mamady-->
+  <div id="ancre_mamady"></div>
+    <div id="mamady">
+        <div class="container">
+            <div class="background-polygon"></div>
+            <div class="presentator" >
+                <h1>LA TEAM</h1>
+                <div class="jessica">
+                    <div class="image">
+                        <img src="images/jessica.jpg" alt="" class="img1">
+                    </div>
+                    <div class="text-jessica">
+                        <h2>JESSICA <span>Gérante</span></h2>
+                        <p>Je suis une jeune femme de 32 ans et passionnée de voyage
+                            et de cuisine.<br><br>
+
+
+                            J'adore explorer de nouvelles cultures à travers le monde
+                            et faire partager mes decouvertes culinaires avec mon entourage.<br><br>
+
+                            "Je crois fermement en l'équilibre entre le travail et la vie personnelle,
+                            et c'est pourquoi j'encourage activement les clients de notre espace de coworking 
+                             à trouver cet équilibre."
+                            
+
+
+
+                        </p>
+                    </div>
+
+                </div>
+
+                <div class="arnaud">
+                    <div class="image-arnaud">
+                        <img src="images/arnaud.jpg" alt="" class="arnaudimg">
+
+                    </div>
+                    <div class="text-arnaud">
+                        <h2>ARNAUD <span>Gérant</span></h2>
+
+                        <p>Et l'idée de créer un espace de coworking moderne & inspirant m'a tout de suite plus.<br><br>
+
+
+                            Amateur de cuisine , j'apprecie également la randonnée en montage et la 
+                             découverte de nouveaux endroits avec mes proches.<br><br>
+                             "Considérer l'équilibre entre la vie professionelle et la vie personnelle 
+                            est essentielle pour une vie epanouissante."
+                        </p>
+                    </div>
+                </div>
+
+</div>
+</div>
+
+
+            </div>
+
+
+
+
+
+<!-- Alexandra-->
+<div id="ancre_ALEXANDRA"></div>
+<div id="ALEXANDRA">
+    <div class="container-global">
+    <div class="container-resa-contact">
+    
+        <div class="titre-trait">
+            <div class="titre">
+            <h1>RESERVATION</h1>
+            </div>
+            <div class="trait"></div>
+            </div>
+    
+    
+            <div class="container-forfait">
+    
+                <div class="demi-journée">
+                <article>FORFAIT</article>
+                <article class="margin">Demi-journée</article>
+                <div class="trait-forfait"></div>
+                <article>15€</article>
+          
+                <div class="repas">
+                <article>+5€ /repas</article>
+                </div>
+                </div>
+          
+          
+                <div class="journée">
+                <article>FORFAIT</article>
+                <article class="margin">Journée</article>
+                <div class="trait-forfait"></div>
+                <article>25€</article>
+          
+                <div class="repas">
+                <article>+5€ /repas</article>
+                </div>
+                </div>
+          
+          
+                <div class="semaine">
+                <article>FORFAIT</article>
+                <article class="margin">Semaine</article>
+                <div class="trait-forfait"></div>
+                <article>115€</article>
+          
+                <div class="repas">
+                <article>+5€ /repas</article>
+                </div>
+                </div>
+              
+              </div>
+          
+              <!-- FORMULAIRE DE CONTACT -->
+          
+              <div class="formulaire">
+          
+                <section class="contact">
+                <div id="titre">CONTACT</div>
+                <div id="trait2"></div>
+                </section>
+          
+              <div class="input-form">
+                
+              <form id="contactForm">
+          
+                <div>
+                <label for="name">Nom</label><br />
+                <input type="text" id="name" placeholder="Dupont Jessica" />
+                </div>
+          
+                <div>
+                <label for="email">E-mail</label><br />
+                <input type="email" id="email" placeholder="JessicaDupont@hotmail.fr"/>
+                </div>
+          
+                <div>
+                <label for="message">Message</label><br />
+                <textarea id="message" rows="10" placeholder="Entrez votre message"></textarea>
+                </div>
+          
+                <button type="submit" value="Submit"a href="#" onclick="popup()">Envoyer</button>
+                  
+              </div>
+            </div>
+               <!-- POP UP-->
+          <div class="container-popup">
+            <div id="popup"> 
+            <a href="#" onclick="popup()">×</a>
+            <p>Merci pour votre message.
+            <br> 
+            <br>
+            Nous reviendrons vers vous rapidement !</p>
+            </div>
+            </div>
+             </form>
+            </div>
+    </div></div>
+    </div>
+
+
+
+
+    </main>
+
+    
+ <!-- VINCENT FOOTER-->
+ <div id="Vincent-footer">
+  <footer class="footer">
+          
+      <div class="int-footer">
+        <div class="logo-all">
+          <div class="logo-cowo">
+              <img src="images/-2-logo-white.png" alt="logo-white" class ="logo-white">
+          </div>
+               <div class="reseau-loc-hor">
+                <div class="reseaux">
+                    <p>NOS RESEAUX</p>
+              <div class="logo-reseaux">
+                  <a href="https://www.instagram.com/" target="_blank"><img src="images/-2-insta-white.png" alt="insta-white" class ="insta-white"></a>
+                  <a href="https://www.facebook.com" target="_blank"><img src="images/-2-fb-white.png" alt="fb-white" class ="fb-white"></a>
+                  <a href="https://twitter.com/home?lang=fr" target="_blank"><img src="images/-2-twitter-white.png" alt="fb-white" class ="fb-white"></a>
+                </div>
+                </div>
+        
+
+        <div class="horraire-localisation">
+<div class="localisation">
+            <a href="https://maps.app.goo.gl/rPunjn1zeX5spnDC7"><img src="images/-2-local-white.png" alt="" class="logo-localisation"></a>
+            <div class="texte">
+                  <h5>LOCALISATION</h5>
+                  <p>4 Rue du Baron 44000 Nantes, 
+                  Ligne 54</p></div></div>
+                  <div class="horaire">
+            <img src="images/-2-horraires-white.png" alt="" class="logo-horaire">
+            <div class="texte">
+            <h5>HORAIRES</h5>
+                  <p>
+                  Lundi - Vendredi : 9h - 18h<br>
+                  Restauration : 12H - 14H<br>
+                Coffee bar : Tout la journée</p></div></div>
+      </div></div>
+      </div>
+
+
+
+          </div>
+<!-- Fin-->
+    
+              
+    </footer> </div>
+
+    <script src="header-footer.js"></script>
+    <script src="reservation-script.js"></script>
+    <script src="script_service.js"></script>
+    <script src="slider.js"></script>
+  </body>
+</html>

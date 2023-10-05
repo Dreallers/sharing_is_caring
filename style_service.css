@@ -4,14 +4,21 @@
   padding: 0;
 }
 
+
+#alexandre {
+  margin-bottom: 50px;
+}
+
 #alexandre .services {
    display: flex;
    justify-content: center;
    margin-top: 30px;
+   
 }
 
 #alexandre .all {
-  width: 50%
+
+  width: 90vw;
 }
 
 @media screen and (max-width: 800px) {
@@ -19,6 +26,11 @@
   #alexandre .allTitles {
     display: flex;
     align-items: flex-end;
+    flex-basis: 0.6em;
+    flex-grow: 1;
+    text-align: center;
+    cursor: pointer;
+    
 
   }
   #alexandre .titleO {
@@ -28,7 +40,9 @@
     font-weight: bold;
     padding: 10px 10px 5px 10px;
     background-color: #ddd1a7;
-    border-radius: 30% 30% 0% 0%;
+    border-radius: 10px 10px 0 0;
+    flex: 1;
+    
   }
 
   #alexandre .titleE {
@@ -38,7 +52,8 @@
     font-weight: bold;
     padding: 10px 10px 5px 10px;
     background-color: #ddd1a7;
-    border-radius: 30% 30% 0% 0%;
+    border-radius: 10px 10px 0 0;
+    flex: 1;
   }
 
   #alexandre .titleB {
@@ -48,7 +63,8 @@
     font-weight: bold;
     padding: 10px 10px 5px 10px;
     background-color: #ddd1a7;
-    border-radius: 30% 30% 0% 0%;
+    border-radius: 10px 10px 0 0;
+    flex: 1;
   }
 
   #alexandre .titleR {
@@ -58,7 +74,8 @@
     font-weight: bold;
     padding: 10px 10px 5px 10px;
     background-color: #ddd1a7;
-    border-radius: 30% 30% 0% 0%;
+    border-radius: 10px 10px 0 0;
+    flex: 1;
   }
 
   #alexandre .subTitle {
@@ -117,6 +134,8 @@
     display: flex;
     flex-direction: row;
     align-items: flex-end;
+    cursor: pointer;
+    
   }
 
   #alexandre .titleO {
@@ -206,9 +225,19 @@
     width: 40%;
     
   }
+  #alexandre .all {
+
+    width: 80vw;
+  }
 }
 
 @media screen and (min-width: 1200px) {
+
+  #alexandre .allTitles {
+    cursor: pointer;
+    
+  }
+
 
   #alexandre .txt {
     font-size: 18px;
@@ -230,7 +259,7 @@
     font-weight: bold;
     padding: 10px 10px 5px 10px;
     background-color: #ddd1a7;
-    border-radius: 30% 30% 0% 0%;
+    
   }
 
   #alexandre .titleE {
@@ -240,7 +269,7 @@
     font-weight: bold;
     padding: 10px 10px 5px 10px;
     background-color: #ddd1a7;
-    border-radius: 30% 30% 0% 0%;
+    
   }
 
   #alexandre .titleB {
@@ -250,7 +279,7 @@
     font-weight: bold;
     padding: 10px 10px 5px 10px;
     background-color: #ddd1a7;
-    border-radius: 30% 30% 0% 0%;
+    
   }
 
   #alexandre .titleR {
@@ -260,7 +289,7 @@
     font-weight: bold;
     padding: 10px 10px 5px 10px;
     background-color: #ddd1a7;
-    border-radius: 30% 30% 0% 0%;
+    
   }
 
   #alexandre .subTitle {

@@ -49,7 +49,7 @@ function restauration() {
   document.getElementById("barista").style.color = "white";
   document.getElementById("openspace").style.color = "white";
   document.getElementsByClassName("txt")[0].innerHTML =
-    "Nos plats sont concoctés à partir de produits frais et locaux.<br />Le menu sera affiché chaque semaine devant le restaurant ainsi que sur notre page instagram.<br/><br/>OUVERTURE : 12H - 14H";
+    "Nos plats sont concoctés à partir de produits frais et locaux.<br />Le menu sera affiché chaque semaine devant le restaurant ainsi que sur notre page instagram.<br/><br/><strong>OUVERTURE : 12H - 14H</strong>";
   document.getElementsByClassName("italic")[0].innerHTML = "";
 }
 

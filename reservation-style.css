@@ -5,13 +5,22 @@
     box-sizing: border-box;
 }
 
-#ALEXANDRA .container-global {
-    display: flex;
+
+#ALEXANDRA {
+  margin-bottom: 50px;
+  display: flex;
     flex-direction: column;
+    flex: 1;
+  
+}
+
+#ALEXANDRA .container-global {
+    
 width: 100%;
 margin: 0 auto;
 font-family: "Roboto condensed", sans-serif;
 position: relative;
+
 }
 
 #ALEXANDRA .container-resa-contact{
