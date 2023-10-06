@@ -196,7 +196,7 @@ width: 80vw;
   cursor: pointer;
 }
 #ALEXANDRA .container-popup {
-  position: fixed;
+  position: absolute;
   top: 22%;
   left: 0;
   display: flex;
