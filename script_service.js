@@ -6,9 +6,9 @@ function openspace() {
   document.getElementById("barista").style.color = "white";
   document.getElementById("restauration").style.color = "white";
   document.getElementsByClassName("txt")[0].innerHTML =
-    "<p>Rencontrez et échangez avec des entrepreneurs qui vous ressemblent.<br />Un espace de travail pensé pour votre bien-être et votre efficacité. </p>";
+    "<p>Rencontrez et échangez avec des entrepreneurs qui vous ressemblent.<br><br>Un espace de travail pensé pour votre bien-être et votre efficacité. </p>";
   document.getElementsByClassName("italic")[0].innerHTML =
-    "<p>A votre disposition: Bureaux équipés collectifs et individuels, fibre.</ p>";
+    "<p><br>A votre disposition: Bureaux équipés collectifs et individuels, fibre.</ p>";
 }
 
 document.getElementById("openspace").addEventListener("click", openspace);
@@ -21,7 +21,7 @@ function detente() {
   document.getElementById("barista").style.color = "white";
   document.getElementById("restauration").style.color = "white";
   document.getElementsByClassName("txt")[0].innerHTML =
-    "<p>Afin de garder une bonne dynamique dans votre travail tout au long de la journée, pensez à venir vous reposer dans notre espace détente et profitez de nos fauteuils et canapés, baby-foot, flipper et coin lecture.</p>";
+    "<p>Afin de garder une bonne dynamique dans votre travail tout au long de la journée, pensez à venir vous reposer dans notre espace détente.<br><br>Profitez de nos fauteuils et canapés, baby-foot, flipper et coin lecture.</p>";
   document.getElementsByClassName("italic")[0].innerHTML = "";
 }
 
@@ -35,7 +35,7 @@ function barista() {
   document.getElementById("openspace").style.color = "white";
   document.getElementById("restauration").style.color = "white";
   document.getElementsByClassName("txt")[0].innerHTML =
-    "<p>Besoin de faire une pause?<br /><br />Retrouvez toute la journée Harold, notre barista, qui vous servira boissons chaudes, jus de fruits frais, et autres gourmandises pour vous maintenir dans des conditions propices à l'efficacité.</p>";
+    "<p>Besoin de faire une pause ?<br /><br />Retrouvez toute la journée Harold, notre barista, qui vous servira boissons chaudes, jus de fruits frais, et autres gourmandises pour vous maintenir dans des conditions propices à l'efficacité. <br><br>Coffee bar ouvert toute la journée.</p>";
   document.getElementsByClassName("italic")[0].innerHTML = "";
 }
 
@@ -49,7 +49,7 @@ function restauration() {
   document.getElementById("barista").style.color = "white";
   document.getElementById("openspace").style.color = "white";
   document.getElementsByClassName("txt")[0].innerHTML =
-    "Nos plats sont concoctés à partir de produits frais et locaux.<br />Le menu sera affiché chaque semaine devant le restaurant ainsi que sur notre page instagram.<br/><br/><strong>OUVERTURE : 12H - 14H</strong>";
+    "Nos plats sont concoctés à partir de produits frais et locaux.<br><br>Le menu sera affiché chaque semaine devant le restaurant ainsi que sur notre page instagram.<br/><br/><strong>OUVERTURE : 12H - 14H</strong>";
   document.getElementsByClassName("italic")[0].innerHTML = "";
 }
 

@@ -210,6 +210,7 @@
 
 #tony .input-contener button:hover{
     opacity: 0.7;
+
 	
 }
 
@@ -322,11 +323,6 @@
 }
 
     
-    /* Hover sur les flèches*/
-#tony #precedent:hover, #suivant:hover{
-    opacity: 0.7;
-}
-    
     
 #tony #precedent{
     margin-left: 155px;
@@ -348,5 +344,25 @@
     right: 10px;
     
 }
+
+
+
+}
+@media screen and ( min-width: 1700px ) {
+
+    #tony #precedent {
+
+        margin-left: 10%;
+    }
+
+    #tony #suivant {
+
+        margin-right: 10%;
+    }
+    #tony .image_nature{
+        object-fit: cover;
+    }
+
+
 
 }

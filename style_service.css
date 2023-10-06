@@ -193,6 +193,7 @@
     margin-bottom: 10px;
     margin-top: 10px;
     width: 100%;
+    
   }
 
   #alexandre .italic {
@@ -222,7 +223,10 @@
   }
 
   #alexandre .layout {
+    display: flex;
+    flex-direction: column;
     width: 40%;
+    justify-content: center;
     
   }
   #alexandre .all {
